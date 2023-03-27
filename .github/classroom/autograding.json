@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "pgmEcho helper &#45; run .&#47;pgmEcho",
+      "setup": "make clean; make all",
+      "run": "./pgmEcho",
+      "input": "",
+      "output": "Usage: ./pgmEcho inputImage.pgm outputImage.pgm",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "pgma2b helper run .&#47;pgma2b",
+      "setup": "make clean; make all",
+      "run": "./pgma2b",
+      "input": "",
+      "output": "Usage: ./pgma2b inputImage.pgm outputImage.pgm",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "pgmb2a helper &#45; run .&#47;pgmb2a",
+      "setup": "make clean; make all",
+      "run": "./pgmb2a",
+      "input": "",
+      "output": "Usage: ./pgmb2a inputImage.pgm outputImage.pgm",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "pgmComp helper &#45; try to run .&#47;pgmComp ",
+      "setup": "make clean; make all",
+      "run": "./pgmComp ",
+      "input": "",
+      "output": "Usage: ./pgmComp inputImage.pgm inputImage.pgm\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "pgmReduce helper &#45; run .&#47;pgmReduce",
+      "setup": "make all",
+      "run": "./pgmReduce",
+      "input": "",
+      "output": "Usage: ./pgmReduce inputImage.pgm reduction_factor outputImage.pgm\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "make clean",
+      "setup": "make all",
+      "run": "make clean",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 0
+    }
+  ]
+}
